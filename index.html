@@ -18,12 +18,16 @@
 
   <style type="text/css">
 
+    .lm {
+      margin-bottom: 1em;
+    }
+
     .hidden.menu {
       display: none;
     }
 
     .masthead.segment {
-      min-height: 700px;
+      min-height: 530px;
       padding: 1em 0em;
     }
     .masthead .logo.item img {
@@ -33,15 +37,15 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 2em;
-      margin-bottom: 0em;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
       font-size: 4em;
-      font-weight: normal;
+      font-weight: bold;
     }
-    .masthead h2 {
-      font-size: 1.5em;
-      margin-bottom: 2.5em;
-      font-weight: normal;
+    .masthead h2.ui.header {
+      font-size: 1.7em;
+      margin-bottom: 2em;
+      font-weight: bold;
     }
 
     .ui.vertical.stripe {
@@ -95,10 +99,10 @@
         min-height: 350px;
       }
       .masthead h1.ui.header {
-        font-size: 2em;
+        font-size: 2.5em;
         margin-top: 1.5em;
       }
-      .masthead h2 {
+      .masthead h2.ui.header {
         margin-top: 0.5em;
         font-size: 1.5em;
       }
@@ -171,58 +175,89 @@
 
 
 <!-- Page Contents -->
-<div class="pusher">
-  <div class="ui inverted vertical masthead center aligned segment">
+<style type="text/css">
+  .landing-image {
+      background-image: url('170831_daria_flow.svg') !important;
+      background-size: cover !important;
+      margin-right: 0 !important;
+  }
+  .pf2 {
+    background-color: #fafafa !important;
+  }
+</style>
 
-    <div class="ui container">
-      <div class="ui large secondary inverted pointing menu">
-        <a class="toc item">
-          <i class="sidebar icon"></i>
-        </a>
-        <div class="item">
-          <img class="ui tiny image" src="170828_daria_white.svg" alt="170828_daria_white.png">
-        </div>
-        <a href="product.html" class="item">Product</a>
-        <a href="customers.html" class="item">Customers</a>
-        <a href="team.html" class="item">Team</a>
-        <a href="careers.html" class="item">Careers</a>
-        <div class="right item">
-          <a class="ui inverted button">Log in</a>
-          <a class="ui inverted button">Get Started</a>
+<div class="pusher">
+  
+  <div class="ui inverted vertical masthead center aligned segment landing-image">
+  
+  <div class="ui container">  
+    
+      <div class="ui container">
+        <div class="ui large secondary inverted pointing menu ">
+          <a class="toc item">
+            <i class="sidebar icon"></i>
+          </a>
+          <div class="item">
+            <img class="ui tiny image" src="170828_daria_white.svg" alt="170828_daria_white.png">
+          </div>
+          <a href="product.html" class="item">Product</a>
+          <a href="customers.html" class="item">Customers</a>
+          <a href="team.html" class="item">Team</a>
+          <a href="careers.html" class="item">Careers</a>
+          <div class="right item">
+            <a class="ui inverted button">Log in</a>
+            <a class="ui inverted button">Get Started</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    
-    <div class="ui text container">
-      <h1 class="ui inverted header">
-        We lead big fish to <br> bluer oceans
-      </h1>
-      <h2>Machine learning made accessible and intuitive</h2><br>
-      <div class="ui big secondary button">Learn More <i class="right arrow icon"></i></div>
-      <br><br><br>
-    </div>
-
+ 
+      <div class="ui text">
+        <h1 class="ui inverted header">
+          We lead big fish to <br> bluer oceans
+        </h1>
+        <h2 class="ui inverted header">Machine learning made accessible and intuitive</h2><br>
+        <div class="lm ui big secondary button">Learn More <i class="right arrow icon"></i></div>
+        <br><br><br>
+      </div>
+  </div>
   </div>
 
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3 class="ui header">Product Feature 1</h3>
-          <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
-          <h3 class="ui header">Product Feature 2</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
-          <h3 class="ui header">Product Feature 3</h3>
-          <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+          <h3 class="ui header">“Everything disappears except the writing experience.”–Stephen Fry</h3>
+          <p>iA Writer gives you the experience of disappearing into the text and forgetting everything around you. We make our tools as simple, as calm and as affordable as we can. Separating form and content, iA Writer lets you experience the pure joy of working with words.</p>
         </div>
         <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+          <img src="170831_daria_window1.svg" class="ui large image">
         </div>
       </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment pf2">
+    <div class="ui middle aligned stackable grid container">
       <div class="row">
-        <div class="center aligned column">
-          <a class="ui huge button">Learn More</a>
+        <div class="six wide left floated column">
+          <img src="170831_daria_window1.svg" class="ui large image">
+        </div>
+        <div class="eight wide column">
+          <h3 class="ui header">Make your point in 100% plain text</h3>
+          <p>The obvious format to write in is plain text. Plain text doesn't lock you in to one app. It works everywhere, built upon standard formats, stored transparently. Embed images, tables, and related documents as content blocks by simply writing the document name.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3 class="ui header">“Everything disappears except the writing experience.”–Stephen Fry</h3>
+          <p>iA Writer gives you the experience of disappearing into the text and forgetting everything around you. We make our tools as simple, as calm and as affordable as we can. Separating form and content, iA Writer lets you experience the pure joy of working with words.</p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="170831_daria_window1.svg" class="ui large image">
         </div>
       </div>
     </div>
