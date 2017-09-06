@@ -37,9 +37,9 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 1em;
+      margin-top: 1.2em;
       margin-bottom: 0.5em;
-      font-size: 4em;
+      font-size: 3.5em;
       font-weight: bold;
     }
     .masthead h2.ui.header {
@@ -47,9 +47,12 @@
       margin-bottom: 2em;
       font-weight: bold;
     }
+    .masthead h3.ui.header {
+      font-weight: bold;
+    }
 
     .ui.vertical.stripe {
-      padding: 8em 0em;
+      padding: 5em 0em;
     }
     .ui.vertical.stripe h3 {
       font-size: 2em;
@@ -80,19 +83,21 @@
       padding: 5em 0em;
     }
 
-    .secondary.pointing.menu .toc.item {
+    .text.borderless.menu .toc.item {
       display: none;
     }
+
+
 
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
         display: none !important;
       }
-      .secondary.pointing.menu .item,
-      .secondary.pointing.menu .menu {
+      .text.borderless.menu .item,
+      .text.borderless.menu .menu {
         display: none;
       }
-      .secondary.pointing.menu .toc.item {
+      .text.borderless.menu .toc.item {
         display: block;
       }
       .masthead.segment {
@@ -107,14 +112,13 @@
         font-size: 1.5em;
       }
     }
-
-
+   
   </style>
 
   <script src="assets/library/jquery.min.js"></script>
-  <script src="../dist/components/visibility.js"></script>
-  <script src="../dist/components/sidebar.js"></script>
-  <script src="../dist/components/transition.js"></script>
+  <script src="semantic/dist/components/visibility.js"></script>
+  <script src="semantic/dist/components/sidebar.js"></script>
+  <script src="semantic/dist/components/transition.js"></script>
   <script>
   $(document)
     .ready(function() {
@@ -177,7 +181,7 @@
 <!-- Page Contents -->
 <style type="text/css">
   .landing-image {
-      background-image: url('170831_daria_flow.svg') !important;
+      background-image: url('170906_daria_flow.svg') !important;
       background-size: cover !important;
       margin-right: 0 !important;
   }
@@ -193,18 +197,22 @@
   <div class="ui container">  
     
       <div class="ui container">
-        <div class="ui large secondary inverted pointing menu ">
+
+        <div class="ui large text inverted borderless menu">
           <a class="toc item">
             <i class="sidebar icon"></i>
           </a>
-          <div class="item">
-            <img class="ui tiny image" src="170828_daria_white.svg" alt="170828_daria_white.png">
+          <div class="fitted item">
+            <img class="ui bottom aligned tiny image" src="170828_daria_white.svg" alt="170828_daria_white.png">
           </div>
-          <a href="product.html" class="item">Product</a>
-          <a href="customers.html" class="item">Customers</a>
-          <a href="team.html" class="item">Team</a>
-          <a href="careers.html" class="item">Careers</a>
+          
           <div class="right item">
+            <a href="product.html" class="vertically fitted item">Product</a>
+          
+            <a href="team.html" class="vertically fitted item">Team</a>
+
+            <a href="careers.html" class="vertically fitted item">Careers</a>
+          
             <a class="ui inverted button">Log in</a>
             <a class="ui inverted button">Get Started</a>
           </div>
@@ -227,24 +235,11 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3 class="ui header">“Everything disappears except the writing experience.”–Stephen Fry</h3>
-          <p>iA Writer gives you the experience of disappearing into the text and forgetting everything around you. We make our tools as simple, as calm and as affordable as we can. Separating form and content, iA Writer lets you experience the pure joy of working with words.</p>
+          <h3>Accessible and Accurate</h3>
+          <p>Daria makes machine learning an accessible reality for users of all skill level— with its highly visualized user interface, you can now easily cleanse and manage your data with ease. By running multiple data experiments side by side, you can now build much more accurate models. </p>
         </div>
         <div class="six wide right floated column">
-          <img src="170831_daria_window1.svg" class="ui large image">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe segment pf2">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="six wide left floated column">
-          <img src="170831_daria_window1.svg" class="ui large image">
-        </div>
-        <div class="eight wide column">
-          <h3 class="ui header">Make your point in 100% plain text</h3>
-          <p>The obvious format to write in is plain text. Plain text doesn't lock you in to one app. It works everywhere, built upon standard formats, stored transparently. Embed images, tables, and related documents as content blocks by simply writing the document name.</p>
+          <img src="170906_daria_window1.svg" class="ui large image">
         </div>
       </div>
     </div>
@@ -253,64 +248,55 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3 class="ui header">“Everything disappears except the writing experience.”–Stephen Fry</h3>
-          <p>iA Writer gives you the experience of disappearing into the text and forgetting everything around you. We make our tools as simple, as calm and as affordable as we can. Separating form and content, iA Writer lets you experience the pure joy of working with words.</p>
+          <h3>Tailor-Made for the Right Fit</h3>
+          <p>Daria chooses the optimal combination of algorithms and hyperparameters for each dataset to produce the most accurate results. Enhance your machine learning experience by putting your data in the most capable hands out there. </p>
         </div>
         <div class="six wide right floated column">
-          <img src="170831_daria_window1.svg" class="ui large image">
+          <img src="170906_daria_window1.svg" class="ui large image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui vertical stripe segment">
+    <div class="ui middle aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <h3>Swift and Simple Deployment</h3>
+          <p>We believe in the power of seeing hard work doing real good in the world.When your models are ready, deploy them with a single line of code to see them in action. No further complications. </p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="170906_daria_window1.svg" class="ui large image">
         </div>
       </div>
     </div>
   </div>
 
-  <div class="ui vertical stripe segment">
-    <div class="ui stackable three column grid container">
+  <div class="ui vertical stripe segment container">
+    <p>Trusted by</p>
+    <div class="ui stackable five column grid">
       <div class="column">
-        <div class="ui raised link fluid card">
-          <div class="image">
-            <img src="/images/avatar2/large/kristy.png">
-          </div>
-          <div class="content">
-            <div class="header">Company 1</div>
-            <div class="description">
-              <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-            </div>
-          </div>
-          <div class="extra content">
-            <button class="ui button">Learn More</button>
-          </div>
+        <div class="ui segment">
+          <img>
         </div>
       </div>
       <div class="column">
-        <div class="ui raised link fluid card">
-          <div class="image">
-            <img src="/images/avatar2/large/kristy.png">
-          </div>
-          <div class="content">
-            <div class="header">Company 2</div>
-            <div class="description">
-              <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-            </div>
-          </div>
-          <div class="extra content">
-            <button class="ui button">Learn More</button>
-          </div>
+        <div class="ui segment">
+          <img>
         </div>
       </div>
       <div class="column">
-        <div class="ui raised link fluid card">
-          <div class="image">
-            <img src="/images/avatar2/large/kristy.png">
-          </div>
-          <div class="content">
-            <div class="header">Company 3</div>
-            <div class="description">
-              <p>Cute dogs come in a variety of shapes and sizes. Some cute dogs are cute for their adorable faces, others for their tiny stature, and even others for their massive size.</p>
-            </div>
-          </div>
-          <div class="extra content">
-            <button class="ui button">Learn More</button>
-          </div>
+        <div class="ui segment">
+          <img>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment">
+          <img>
+        </div>
+      </div>
+      <div class="column">
+        <div class="ui segment">
+          <img>
         </div>
       </div>
     </div>
@@ -320,7 +306,7 @@
   <div class="ui vertical stripe segment">
     <div class="ui text container">
       <h3 class="ui header">Still need help?</h3>
-      <p>Do not worry if you have zero knowledge in Machine Learning. <br> XBRAIN provides the right resource to support your experience with Estu.</p>
+      <p>Do not worry if you have zero knowledge in Machine Learning. <br> XBRAIN provides the right resource to support your experience with daria.</p>
         <form class="ui form">
           <div class="field">
             <input type="text" name="email" placeholder="Enter your Email">
@@ -345,9 +331,9 @@
         <div class="three wide column">
           <h4 class="ui inverted header">R&#38;D LABS</h4>
           <div class="ui inverted link list">
-            <a href="#" class="item">201 Teheran-ro</a>
-            <a href="#" class="item">Gangnam-gu</a>
-            <a href="#" class="item">Seoul Korea</a>
+            <a href="#" class="item">#102 77 Chungam-ro</a>
+            <a href="#" class="item">Pohang-si</a>
+            <a href="#" class="item">Gyungsangbuk-do Korea</a>
           </div>
         </div>
         <div class="three wide column">
