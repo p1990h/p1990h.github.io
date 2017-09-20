@@ -227,6 +227,7 @@
 @pink             : #E03997;
 @brown            : #A5673F;
 @grey             : #767676;
+@darkgrey         : #616161;
 @black            : #1B1C1D;
 
 /*---  Light Colors  ---*/
