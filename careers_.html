@@ -14,16 +14,8 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
-
-
+ 
   <style type="text/css">
-    .is {
-      width: auto !important;
-      height: 20px !important;
-    }
-    .lc {
-      margin-top: -15em !important;
-    }
     .lm2 {
       display: none !important;
     }
@@ -37,7 +29,7 @@
     }
 
     .masthead.segment {
-      min-height: 850px;
+      min-height: 350px;
       padding: 1.2em 0em;
     }
     .masthead .logo.item img {
@@ -47,7 +39,7 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 2em;
+      margin-top: 1.5em;
       margin-bottom: 0em;
       font-size: 3.7em;
       font-weight: bold;
@@ -66,7 +58,6 @@
       padding: 5em 0em;
     }
     .ui.vertical.stripe h3 {
-      font-size: 2em;
     }
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
@@ -107,29 +98,25 @@
       font-weight: normal;
     }
 
-
-    /*2k dsiplay 2160px~2950px~*/
-    @media only screen and (min-width: 2160px) and (max-width: 2950px) {
-      .masthead.segment {
-      min-height: 1200px;
-      padding: 1em 0em;
-    }
+    .pf {
+      width: 220px;
+      height: auto;
+      margin-top: 5em;
     }
 
-    /*4k dsiplay 2950px~*/
-    @media only screen and (min-width: 2950px)  {
-      .masthead.segment {
-      min-height: 1350px;
-      padding: 1em 0em;
-    }
+    .ds {
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
+      text-align: center;
+      color: #616161;
     }
 
-    /*tablet 701px~1400px*/
-    @media only screen and (min-width: 701px) and (max-width: 1400px) {
-      .lc {
-      margin-top: 0em !important;
-      }
+    .pl {
+      color: #616161;
+      font-size: 1.2em !important;
     }
+
+
 
     /*mobile under 700px*/
     @media only screen and (max-width: 700px) {
@@ -147,7 +134,7 @@
         display: block !important;
       }
       .masthead.segment {
-        min-height: 500px;
+        min-height: 350px;
       }
       .masthead h1.ui.header {
         text-align: center !important;
@@ -164,9 +151,6 @@
       }
       .lm2 {
         display: inline !important;
-      }
-      .xbf {
-        display: none !important;
       }
     }
    
@@ -200,6 +184,10 @@
 
     })
   ;
+
+      $('.ui.accordion')
+      .accordion()
+    ;
   </script>
 </head>
 <body>
@@ -237,8 +225,9 @@
 <!-- Page Contents -->
 <style type="text/css">
   .landing-image {
-      background-image: url('170918_daria_flow.svg') !important;
+    
       background-size: cover !important;
+      background-color: #283593 !important;
   }
   .pf2 {
     background-color: #fafafa !important;
@@ -262,7 +251,7 @@
           </div>
           
           <div class="right item">
-            <a href="#" class="vertically fitted item">Product</a>
+            <a href="product.html" class="vertically fitted item">Product</a>
           
             <a href="team_.html" class="vertically fitted item">Team</a>
 
@@ -277,108 +266,108 @@
  
       <div class="ui text">
         <h1 class="ui left aligned inverted header">
-          We lead big fish to <br> bluer oceans
+          Title
         </h1>
-        <h2 class="ui left aligned inverted header">Machine learning made accessible and intuitive</h2><br>
-        <div class="lm ui left floated large secondary button">Learn More <i class="right arrow icon"></i></div>
-        <div class="lm2 ui medium secondary button">Learn More <i class="right arrow icon"></i></div>
-        <br><br><br>
       </div>
 
   </div>
   </div>
 
-  <div class="lc ui vertical stripe basic segment">
+ <div class="ui vertical stripe basic segment">
     <div class="ui middle aligned stackable grid container">
+      <h1>TEAM INTRO</h1>
       <div class="row">
         <div class="eight wide column">
-          <h3>Accessible and Accurate</h3>
-          <p class="ui">Daria makes machine learning an accessible reality for users of all skill level— with its highly visualized user interface, you can now easily cleanse and manage your data with ease. By running multiple data experiments side by side, you can now build much more accurate models. </p>
+          <p>
+          At XBrain, we value the kind of open, direct communication that takes us to good places. 
+          We’d like, therefore, to extend you the same courtesy by telling you straight about what we hope for in a new team member:<br><br> 
+
+          We’d like it if you were open to new ideas.<br><br>  
+
+          We’d like it if you were a self-starter.<br><br>  
+
+          We’d like it if you had enthusiasm to spare.<br><br>  
+
+          We’d like it if you had good work ethic and discipline.<br><br>  
+
+          We’d like it if you considered conversation integral to building relationships between colleagues.<br><br>  
+
+          We’d like it if you erred on the side of overzealousness.<br><br>  
+          We’d like it if you respected the varied ideas of others as much as you’d like your own ideas to be respected.<br><br> 
+
+          We’d like it if you weren’t averse to stepping outside your comfort zone, whether that be something related to your area of work, or a completely different craft, or a salad topping you’ve never tried before.<br><br> 
+
+          We’d like it if you could sustain a symbiotic relationship with your work.<br><br> 
+
+          We’d like it if you could think about what we could contribute to your personal goals, as well as what you could contribute to our culture.
+ 
+        </p>
         </div>
         <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
+          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
         </div>
       </div>
     </div>
   </div>
+
+
   <div class="ui vertical stripe basic segment">
-    <div class="ui middle aligned stackable grid container">
+    <div class="ui top aligned stackable grid container">
+      <h1>POSITION</h1><br>
       <div class="row">
         <div class="eight wide column">
-          <h3>Tailor-Made for the Right Fit</h3>
-          <p>Daria chooses the optimal combination of algorithms and hyperparameters for each dataset to produce the most accurate results. Enhance your machine learning experience by putting your data in the most capable hands out there. </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe basic segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3>Swift and Simple Deployment</h3>
-          <p>We believe in the power of seeing hard work doing real good in the world. When your models are ready, deploy them with a single line of code to see them in action. No further complications. </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui vertical stripe basic segment container">
-    <p>Trusted by</p>
-    <div class="ui stackable six column grid">
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/amanda_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/pentasecurity_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/truebalance_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/kap_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/ubase_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/bespinglobal_logo.svg">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Don’t be a stranger!</h3>
-      <p>Leave us your unanswered burning questions, thoughtful suggestions, or even a simple hello. We’re always on the other line. </p>
-        <form class="ui form">
-          <div class="field">
-            <input type="text" name="email" placeholder="Enter your Email">
+          <h2>Software Engineer</h2>
+          <p>
+            Daria is our answer to the ever-growing demand for accessible machine learning software across various industries. Every member plays a significant role in making this answer as functional and optimal as possible.<br><br>
+            As a software engineer at XBrain, you would be taking charge of constructing Daria’s interface, which enables our users to combine / modify data in real time, and takes care of dataset and trained models management. Daria’s API server, which allows the trained models to be used in RESTful API, is also in your hands.<br><br>
+            <b>We look for the following qualifications in our candidates:</b><br>
+          </p>
+          <div class="pl ui bulleted list">
+            <div class="item">Industry experience (or experience of equivalence)  with Web Framework (Python Django, Ruby on Rails, Java and Scala Play, Java Spring)</div>
+            <div class="item">A bachelor’s degree in computer engineering / science, or experience of equivalence</div>
           </div>
-          <button class="ui button" type="submit">Submit</button>
-        </form>
+          <p>
+            <br><b>We’d welcome the following qualifications:</b>
+          </p>
+          <div class="pl ui bulleted list">
+            <div class="item">Knowledge of and experience with software and systems related to Version Control, Issue Tracking, Continuous Integration such as Git, JIRA, and Jenkins. (*required for experienced hires)</div>
+            <div class="item">Experience with Cloud Architecture (e.g. Amazon AWS, MS Azure, Google GCP), (*required for experienced hires)</div>
+            <div class="item">Varied experience with JavaScript Library</div>
+            <div class="item">Knowledge of Continuous Build, Integration, Test, and Delivery System</div>
+          </div>
+        </div>
+        <div class="six wide right floated column">
+          <div class="ui fluid card">
+            <div class="content">
+              <p class="center aligned">Want to work for Daria?</p>
+              <button class="ui right floated fluid primary button">
+                Apply for this role
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="ui vertical stripe basic segment">
+    <div class="ui middle aligned stackable grid container">
+      <h1>OFFICE LIFE</h1>
+      <div class="row">
+        <div class="eight wide column">
+          <p>Although the yet-miniscule size of the team mandates that we each lead our own agendas, we try our best to take interest in the projects of others.<br><br> Attention to every detail of Estu’s construction is integral to a community as small as ours. Each member tries to stay cognizant of the role of the other in the team, so that we all have a comprehensive and specific understanding of everyday operations. </p>
+        </div>
+        <div class="six wide right floated column">
+          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+        </div>
+      </div>
     </div>
   </div>
 
 
-  <div class="ui inverted vertical footer segment">
+   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted equal height stackable grid">
         <div class="three wide column">

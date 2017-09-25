@@ -14,6 +14,13 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
+ 
+  <!-- Profile Random Rearrange -->
+  <script type="text/javascript">
+    $(function() {
+     $("#parent").html($("#parent").children().sort(function() { return 0.5 - Math.random() }));
+    });
+  </script>
 
 
   <style type="text/css">
@@ -59,7 +66,6 @@
       padding: 5em 0em;
     }
     .ui.vertical.stripe h3 {
-      font-size: 2em;
     }
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
@@ -99,6 +105,20 @@
     .p {
       font-weight: normal;
     }
+
+    .pf {
+      width: 220px;
+      height: auto;
+      margin-top: 5em;
+    }
+
+    .ds {
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
+      text-align: center;
+      color: #616161;
+    }
+
 
 
     /*mobile under 700px*/
@@ -175,11 +195,12 @@
   <div class="ui container">
     <a href="index.html" class="item">Home</a>
     <a href="product.html" class="item">Product</a>
-    <a href="team.html" class="item">Team</a>
-    <a href="careers.html" class="item">Careers</a>
+    <a href="team_.html" class="item">Team</a>
+    <a href="careers_.html" class="item">Careers</a>
+    <a href="#" class="item">Blog</a>
     <div class="right menu">
       <div class="item">
-        <a class="ui button">Log in</a>
+        <a class="ui button">Sign in</a>
       </div>
       <div class="item">
         <a href="product.html" class="ui primary button">Get Started</a>
@@ -192,9 +213,10 @@
 <div class="ui vertical inverted sidebar menu">
   <a href="index.html" class="item">Home</a>
   <a class="item">Product</a>
-  <a href="team.html" class="item">Team</a>
-  <a href="careers.html" class="item">Careers</a>
-  <a class="item">Login</a>
+  <a href="team_.html" class="item">Team</a>
+  <a href="careers_.html" class="item">Careers</a>
+  <a href="#" class="item">Blog</a>
+  <a class="item">Sign in</a>
   <a class="item">Get Started</a>
 </div>
 
@@ -230,11 +252,11 @@
           <div class="right item">
             <a href="product.html" class="vertically fitted item">Product</a>
           
-            <a href="team.html" class="vertically fitted item">Team</a>
+            <a href="team_.html" class="vertically fitted item">Team</a>
 
-            <a href="careers.html" class="vertically fitted item">Careers</a>
-          
-            <a class="ui inverted button">Log in</a>
+            <a href="careers_.html" class="vertically fitted item">Careers</a>
+            <a href="#" class="vertically fitted item">Blog</a>
+            <a class="ui inverted button">Sign in</a>
             <a class="ui inverted button">Get Started</a>
           </div>
         </div>
@@ -250,7 +272,7 @@
   </div>
   </div>
 
- <div class="ui vertical stripe segment">
+ <div class="ui vertical stripe basic segment">
     <div class="ui middle aligned stackable grid container">
       <h1>CULTURE</h1>
       <div class="row">
@@ -269,139 +291,201 @@
   </div>
 
 
-  <div class="ui vertical stripe segment">
-    <div class="ui container">
-      <h1>MEMBERS</h1><br><br><br>
-      <div class="ui four stackable cards">
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/jy.png">
-          </div>
-          <div class="content">
-            <a class="header">Jinyoung Choi</a>
-            <div class="description">
-              CEO, co-Founder <br><br>
-              entrepreneur, aspiring patron of the arts, dad joke extraordinaire 
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="linkedin icon"></i>
-            </a>
-          </div>
-        </div>
+ <div class="ui vertical stripe basic segment">
+  <div class="ui top aligned stackable grid container">
+    <h1>MEMBERS</h1>
 
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/ac.png">
-          </div>
-          <div class="content">
-            <a class="header">Anthony Cha</a>
-            <div class="description">
-              Product Manager, Co-Founder <br><br>
-              sportsman, chocolate hater, photographer
-            </div>
-          </div>
-          <div class="extra content">
-            <a href="https://www.linkedin.com/in/anthonycha/">
-              <i class="linkedin icon"></i>
-            </a>
-          </div>
+    <div id="parent" class="row">
+      <div id="1" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/jy.png">
+          <h3 class="ui centered header">
+            Jinyoung Choi
+            <div class="sub header">CEO, co-Founder</div>
+          </h3>
         </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/jm.png">
-          </div>
-          <div class="content">
-            <a class="header">Jongmin Kim</a>
-            <div class="description">
-              software engineer <br><br>
-              motorbike enthusiast, wager aficionado, lover of computers and data distribution processing
-            </div>
-          </div>
-          <div class="extra content">
-            <a href="https://www.linkedin.com/in/jongmin-kim-b46b1289/">
-              <i class="linkedin icon"></i>
-            </a>
-            <a href="https://www.facebook f.com/profile.php?id=100004076165465">
-              <i class="facebook f icon"></i>
-            </a>
-          </div>
+        <div class="ds">
+          <a href="https://www.linkedin.com/in/jinyoung-choi-4b36602b/">
+            <i class="grey linkedin square icon"></i>
+          </a>
         </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/yh.png">
-          </div>
-          <div class="content">
-            <a class="header">Yonghyun Kwon</a>
-            <div class="description">
-              Software Engineer <br><br>
-              soccer player, VR/AR enthusiast 
-            </div>
-          </div>
-          <div class="extra content">
-            <a href="https://www.facebook f.com/profile.php?id=100001560258809">
-              <i class="facebook f icon"></i>
-            </a>
-          </div>
+        <div class="ds description">
+          entrepreneur, aspiring patron of the arts, dad joke extraordinaire 
         </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/kh.png">
-          </div>
-          <div class="content">
-            <a class="header">Kukhwan Park</a>
-            <div class="description">
-              visual designer <br><br>
-              hyphenated designer-developer-to-be, pursuer of peace and quiet
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="linkedin icon"></i>
-            </a>
-            <a>
-              <i class="dribble icon"></i>
-            </a>
-          </div>
-        </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/sz.png">
-          </div>
-          <div class="content">
-            <a class="header">Suzin You</a>
-            <div class="description">
-              machine learning engineer <br><br>
-              (pretentious food)-ie, cat lover, woman on a mission
-            </div>
-          </div>
-   
-        </div>
-        <div class="ui fluid card">
-          <div class="image">
-            <img src="assets/images/team/es.png">
-          </div>
-          <div class="content">
-            <a class="header">Eunsoo Kim</a>
-            <div class="description">
-              Public Relations <br><br>
-              pun reveler, drip-brewed coffee drinker, writer
-            </div>
-          </div>
-          <div class="extra content">
-            <a>
-              <i class="linkedin icon"></i>
-            </a>
-            <a>
-              <i class="facebook f icon"></i>
-            </a>
-          </div>
-        </div>
-
       </div>
+
+      <div id="2" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/ac.png">
+          <h3 class="ui centered header">
+            Anthony Cha
+            <div class="sub header">Product Manager, Co-Founder</div>
+          </h3>
+        </div>
+        <div class="ds">
+          <a href="https://www.linkedin.com/in/anthonycha">
+            <i class="grey linkedin square icon"></i>
+          </a>
+        </div>
+        <div class="ds description">
+          Product Manager, Co-Founder 
+              sportsman, chocolate hater, photographer
+        </div>
+      </div>
+
+      <div id="3" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/jm.png">
+          <h3 class="ui centered header">
+            Jongmin Kim
+            <div class="sub header">Software Engineer</div>
+          </h3>
+        </div>
+        <div class="ds">
+          <a href="https://www.linkedin.com/in/jongmin-kim-b46b1289/">
+            <i class="grey linkedin square icon"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100004076165465&fref=ts">
+            <i class="grey facebook square icon"></i>
+          </a>
+        </div>
+        <div class="ds description">
+          motorbike enthusiast, wager aficionado, lover of computers and data distribution processing 
+        </div>
+      </div>
+
+      <div id="4" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/yh.png">
+          <h3 class="ui centered header">
+            Yonghyun Kwon
+            <div class="sub header">Software Engineer</div>
+          </h3>
+        </div>
+        <div class="ds">
+          <a href="https://www.facebook.com/profile.php?id=100001560258809">
+            <i class="grey facebook square icon"></i>
+          </a>
+        </div>
+        <div class="ds description">
+          soccer player, VR/AR enthusiast
+        </div>
+      </div>
+
+      <div id="5" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/kh.png">
+          <h3 class="ui centered header">
+            Kukhwan Park
+            <div class="sub header">Visual Designer</div>
+          </h3>
+        </div>
+        <div class="ds">
+          
+            <i class="grey facebook square icon"></i>
+            <i class="grey dribble icon"></i>
+          
+        </div>
+        <div class="ds description">
+          hyphenated designer-developer-to-be, pursuer of peace and quiet
+        </div>
+      </div>
+
+      <div id="6" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/sz.png">
+          <h3 class="ui centered header">
+            Suzin You
+            <div class="sub header">Machine Learning Engineer</div>
+          </h3>
+        </div>
+        <div class="ds">
+          
+            <i class="icon"></i>
+          
+        </div>
+        <div class="ds description">
+          (pretentious food)-ie, cat lover, woman on a mission
+        </div>
+      </div>
+
+      <div id="7" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="assets/images/team/es.png">
+          <h3 class="ui centered header">
+            Eunsoo Kim
+            <div class="sub header">Public Relations</div>
+          </h3>
+        </div>
+        <div class="ds">
+          
+            <i class="icon"></i>
+          
+        </div>
+        <div class="ds description">
+          pun reveler, drip-brewed coffee drinker, writer
+        </div>
+      </div>
+
+      <div id="8" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png">
+          <h3 class="ui centered header">
+            Jongheon Jeong
+            <div class="sub header">Researcher</div>
+          </h3>
+        </div>
+        <div class="ds">
+          
+            <i class="icon"></i>
+          
+        </div>
+        <div class="ds description">
+          soccer player, VR/AR enthusiast
+        </div>
+      </div>
+
+      <div id="9" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png">
+          <h3 class="ui centered header">
+            Jungkap Park
+            <div class="sub header">Machine Learning Engineer</div>
+          </h3>
+        </div>
+        <div class="ds">
+          
+            <i class="icon"></i>
+          
+        </div>
+        <div class="ds description">
+          soccer player, VR/AR enthusiast
+        </div>
+      </div>
+
+      <div id="10" class="four wide column">
+        <div>
+          <img class="ui pf centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png">
+          <h3 class="ui centered header">
+            Jinwoo Shin
+            <div class="sub header">Head of Research </div>
+          </h3>
+        </div>
+        <div class="ds">
+          
+            <i class="icon"></i>
+          
+        </div>
+        <div class="ds description">
+          soccer player, VR/AR enthusiast
+        </div>
+      </div>
+
+
     </div>
   </div>
+  </div>
+
 
   <div class="ui vertical stripe segment">
     <div class="ui middle aligned stackable grid container">
@@ -418,9 +502,9 @@
   </div>
 
 
-  <div class="ui inverted vertical footer segment">
+   <div class="ui inverted vertical footer segment">
     <div class="ui container">
-      <div class="ui stackable inverted divided equal height stackable grid">
+      <div class="ui stackable inverted equal height stackable grid">
         <div class="three wide column">
           <h4 class="ui inverted header">HEADQUARTER</h4>
           <div class="ui inverted link list">
@@ -435,8 +519,11 @@
         <div class="three wide column">
           <h4 class="ui inverted header">CONTACT</h4>
           <div class="ui inverted link list">
-            <a href="mailto:info@xbrain.team" class="item">info@xbrain.team</a>
+            <a href="mailto:info@xbrain.team" class="item"><p>info@xbrain.team</p></a>
           </div>
+        </div>
+        <div class="three wide column right floated">
+          <img class="xbf ui image tiny right floated" src="assets/images/xbrain_logo_white.svg">
         </div>
       </div>
       <br><br><br>
