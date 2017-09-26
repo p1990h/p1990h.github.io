@@ -14,16 +14,8 @@
     integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
-
-
+ 
   <style type="text/css">
-    .is {
-      width: auto !important;
-      height: 20px !important;
-    }
-    .lc {
-      margin-top: -15em !important;
-    }
     .lm2 {
       display: none !important;
     }
@@ -37,7 +29,7 @@
     }
 
     .masthead.segment {
-      min-height: 850px;
+      min-height: 350px;
       padding: 1.2em 0em;
     }
     .masthead .logo.item img {
@@ -47,7 +39,7 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 2em;
+      margin-top: 1.5em;
       margin-bottom: 0em;
       font-size: 3.7em;
       font-weight: bold;
@@ -66,7 +58,6 @@
       padding: 5em 0em;
     }
     .ui.vertical.stripe h3 {
-      font-size: 2em;
     }
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
@@ -107,29 +98,25 @@
       font-weight: normal;
     }
 
-
-    /*2k dsiplay 2160px~2950px~*/
-    @media only screen and (min-width: 2160px) and (max-width: 2950px) {
-      .masthead.segment {
-      min-height: 1200px;
-      padding: 1em 0em;
-    }
+    .pf {
+      width: 220px;
+      height: auto;
+      margin-top: 5em;
     }
 
-    /*4k dsiplay 2950px~*/
-    @media only screen and (min-width: 2950px)  {
-      .masthead.segment {
-      min-height: 1350px;
-      padding: 1em 0em;
-    }
+    .ds {
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
+      text-align: center;
+      color: #616161;
     }
 
-    /*tablet 701px~1400px*/
-    @media only screen and (min-width: 701px) and (max-width: 1400px) {
-      .lc {
-      margin-top: 0em !important;
-      }
+    .pl {
+      color: #616161;
+      font-size: 1.2em !important;
     }
+
+
 
     /*mobile under 700px*/
     @media only screen and (max-width: 700px) {
@@ -147,7 +134,7 @@
         display: block !important;
       }
       .masthead.segment {
-        min-height: 500px;
+        min-height: 350px;
       }
       .masthead h1.ui.header {
         text-align: center !important;
@@ -164,9 +151,6 @@
       }
       .lm2 {
         display: inline !important;
-      }
-      .xbf {
-        display: none !important;
       }
     }
    
@@ -200,6 +184,14 @@
 
     })
   ;
+
+      $('.ui.accordion')
+      .accordion()
+    ;
+
+    $('select.dropdown')
+      .dropdown()
+    ;
   </script>
 </head>
 <body>
@@ -237,8 +229,9 @@
 <!-- Page Contents -->
 <style type="text/css">
   .landing-image {
-      background-image: url('170918_daria_flow.svg') !important;
+    
       background-size: cover !important;
+      background-color: #283593 !important;
   }
   .pf2 {
     background-color: #fafafa !important;
@@ -279,108 +272,121 @@
  
       <div class="ui text">
         <h1 class="ui left aligned inverted header">
-          We lead big fish to <br> bluer oceans
+          Start your machine learning experience here! 
         </h1>
-        <h2 class="ui left aligned inverted header">Machine learning made accessible and intuitive</h2><br>
-        <div class="lm ui left floated large secondary button">Learn More <i class="right arrow icon"></i></div>
-        <div class="lm2 ui medium secondary button">Learn More <i class="right arrow icon"></i></div>
-        <br><br><br>
       </div>
 
   </div>
   </div>
 
-  <div class="lc ui vertical stripe basic segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3>Accessible and Accurate</h3>
-          <p class="ui">Daria makes machine learning an accessible reality for users of all skill level— with its highly visualized user interface, you can now easily cleanse and manage your data with ease. By running multiple data experiments side by side, you can now build much more accurate models. </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="ui vertical stripe basic segment">
-    <div class="ui middle aligned stackable grid container">
+    <div class="ui top aligned stackable grid container">
+      <h1>PLANS</h1><br>
       <div class="row">
-        <div class="eight wide column">
-          <h3>Tailor-Made for the Right Fit</h3>
-          <p>Daria chooses the optimal combination of algorithms and hyperparameters for each dataset to produce the most accurate results. Enhance your machine learning experience by putting your data in the most capable hands out there. </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ui vertical stripe basic segment">
-    <div class="ui middle aligned stackable grid container">
-      <div class="row">
-        <div class="eight wide column">
-          <h3>Swift and Simple Deployment</h3>
-          <p>We believe in the power of seeing hard work doing real good in the world. When your models are ready, deploy them with a single line of code to see them in action. No further complications. </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui vertical stripe basic segment container">
-    <p>Trusted by</p>
-    <div class="ui stackable six column grid">
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/amanda_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/pentasecurity_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/truebalance_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/kap_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/ubase_logo.svg">
-        </div>
-      </div>
-      <div class="column">
-        <div class="ui basic segment">
-          <img class="ui centered image is" src="assets/images/customers/bespinglobal_logo.svg">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Don’t be a stranger!</h3>
-      <p>Leave us your unanswered burning questions, thoughtful suggestions, or even a simple hello. We’re always on the other line. </p>
-        <form class="ui form">
-          <div class="field">
-            <input type="text" name="email" placeholder="Enter your Email">
+        <div class="eight wide right floated column">
+          <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/avatar2/large/kristy.png">
+            </div>
+            <div class="content">
+              <div class="description">
+                On-Premise, for the added security and service customized for your data science needs
+              </div>
+            </div>
           </div>
-          <button class="ui button" type="submit">Submit</button>
-        </form>
+        </div>
+        <div class="eight wide right floated column">
+           <div class="ui fluid card">
+            <div class="image">
+              <img src="/images/avatar2/large/kristy.png">
+            </div>
+            <div class="content">
+              <div class="description">
+                Public Cloud, for the affordability and service scalable for your business’ growth          <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <div class="ui vertical stripe basic segment">
+    <div class="ui top aligned stackable grid container">
+      <h1>CONTACT US</h1><br>
+      <div class="row">
+        <div class="eight wide column">
+          <form class="ui form">
+            <div class="field">
+              <label>Name</label>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text"  placeholder="First Name">
+                </div>
+                <div class="field">
+                  <input type="text"  placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Company</label>
+              <div class="two fields">
+                <div class="field">
+                  <input type="text"  placeholder="Company Name">
+                </div>
+                <div class="field">
+                  <input type="text"  placeholder="Job Title">
+                </div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>Email</label>
+              <input type="text"  placeholder="you@damain.com">
+            </div>
+            <div class="field">
+              <label>Phone Number (Optional)</label>
+              <input type="text"  placeholder="">
+            </div>
+
+            <div class="ui form">
+              <div class="field">
+                  <label>Inquiry Type</label>
+                  <div class="ui selection dropdown">
+                      <input type="hidden" name="Request a demo">
+                      <i class="dropdown icon"></i>
+                      <div class="default text">Request a demo</div>
+                      <div class="menu">
+                          <div class="item" data-value="1">Male</div>
+                          <div class="item" data-value="0">Female</div>
+                      </div>
+                  </div>
+              </div>
+            </div><br>
+
+            
+            <div class="ui primary button" tabindex="0">Submit</div>
+          </form>
+        </div>
+        <div class="eight wide right floated column">
+          <div class="ui form">
+              <div class="field">
+                <label>Message</label>
+                <textarea rows="15"></textarea>
+              </div>
+            </div><br>
+
+        </div>
+      </div>
+
+
     </div>
   </div>
 
 
-  <div class="ui inverted vertical footer segment">
+   <div class="ui inverted vertical footer segment">
     <div class="ui container">
       <div class="ui stackable inverted equal height stackable grid">
         <div class="three wide column">
