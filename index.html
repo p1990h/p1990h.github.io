@@ -22,7 +22,7 @@
       height: 20px !important;
     }
     .lc {
-      margin-top: -15em !important;
+      margin-top: -10em !important;
     }
     .lm2 {
       display: none !important;
@@ -47,19 +47,19 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 2em;
+      margin-top: 1.2em;
       margin-bottom: 0em;
-      font-size: 3.7em;
+      font-size: 4em;
       font-weight: bold;
       line-height: 110%;
     }
     .masthead h2.ui.header {
-      font-size: 1.7em;
+      font-size: 2em;
       margin-bottom: 1em;
       font-weight: normal;
     }
     .masthead h3.ui.header {
-      font-weight: normal;
+      font-weight: bold;
     }
 
     .ui.vertical.stripe {
@@ -107,6 +107,20 @@
       font-weight: normal;
     }
 
+    .sh {
+    }
+
+    .blue {
+      color: #3949ab;
+      font-weight: 900;
+      margin-top: 0.2em;
+    }
+
+    .icon {
+      width: 45px;
+      height: auto;
+    }
+
 
     /*2k dsiplay 2160px~2950px~*/
     @media only screen and (min-width: 2160px) and (max-width: 2950px) {
@@ -122,6 +136,9 @@
       min-height: 1350px;
       padding: 1em 0em;
     }
+      .masthead h1.ui.header {
+        margin-top: 3em;
+      }
     }
 
     /*tablet 701px~1400px*/
@@ -237,7 +254,11 @@
 <!-- Page Contents -->
 <style type="text/css">
   .landing-image {
-      background-image: url('170918_daria_flow.svg') !important;
+      background-image: url('170927_daria_flow.svg') !important;
+      background-size: cover !important;
+  }
+  .footer-image {
+      background-image: url('170927_daria_flow_footer.svg') !important;
       background-size: cover !important;
   }
   .pf2 {
@@ -278,11 +299,11 @@
 
  
       <div class="ui text">
-        <h1 class="ui left aligned inverted header">
+        <h1 class="sh ui  inverted header">
           We lead big fish to <br> bluer oceans
         </h1>
-        <h2 class="ui left aligned inverted header">Machine learning made accessible and intuitive</h2><br>
-        <div class="lm ui left floated large secondary button">Learn More <i class="right arrow icon"></i></div>
+        <h2 class="ui  inverted header">Machine learning made accessible and intuitive</h2><br>
+        <div class="lm ui  large secondary button">Learn More <i class="right arrow icon"></i></div>
         <div class="lm2 ui medium secondary button">Learn More <i class="right arrow icon"></i></div>
         <br><br><br>
       </div>
@@ -294,11 +315,14 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3>Accessible and Accurate</h3>
-          <p class="ui">Daria makes machine learning an accessible reality for users of all skill level— with its highly visualized user interface, you can now easily cleanse and manage your data with ease. By running multiple data experiments side by side, you can now build much more accurate models. </p>
+          <img class="icon" src="circle.svg">
+          <h3 class="blue">Accessible and Intuitive</h3>
+          <p class="ui">Daria makes machine learning an accessible reality for users of any skill level. The highly visualized interface helps novices use Daria with minimal programming knowledge, while industry experts enjoy vastly reduced hours of iterative work through Daria’s automated machine learning process.</p> 
+          <div class="ui divider"></div> 
+          <a href=""><p>Learn More <i class="right arrow small icon"></i></p></a>
         </div>
         <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
+          <img src="test.svg">
         </div>
       </div>
     </div>
@@ -307,11 +331,14 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3>Tailor-Made for the Right Fit</h3>
-          <p>Daria chooses the optimal combination of algorithms and hyperparameters for each dataset to produce the most accurate results. Enhance your machine learning experience by putting your data in the most capable hands out there. </p>
+          <img class="icon" src="circle.svg">
+          <h3 class="blue">Tailor-Made for the Right Fit</h3>
+          <p>Daria applies numerous machine learning training conditions to your data and constructs an environment where you can compare and analyze disparate results at a glance. </p>
+          <div class="ui divider"></div> 
+          <a href=""><p>Learn More <i class="right arrow small icon"></i></p></a>
         </div>
         <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
+          <img src="test.svg">
         </div>
       </div>
     </div>
@@ -320,18 +347,21 @@
     <div class="ui middle aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h3>Swift and Simple Deployment</h3>
-          <p>We believe in the power of seeing hard work doing real good in the world. When your models are ready, deploy them with a single line of code to see them in action. No further complications. </p>
+          <img class="icon" src="circle.svg">
+          <h3 class="blue">Simple and Swift Deployment</h3>
+          <p>We believe in the value of seeing hard work doing real good in the world. When your models are ready, deploy them with a single line of code to see them in action. No further complications.</p>
+          <div class="ui divider"></div> 
+          <a href=""><p>Learn More <i class="right arrow small icon"></i></p></a>
         </div>
         <div class="six wide right floated column">
-          <img src="https://semantic-ui.com/images/wireframe/image.png" class="ui large image">
+          <img src="test.svg">
         </div>
       </div>
     </div>
   </div>
 
+  <div class="footer-image">
   <div class="ui vertical stripe basic segment container">
-    <p>Trusted by</p>
     <div class="ui stackable six column grid">
       <div class="column">
         <div class="ui basic segment">
@@ -366,18 +396,24 @@
     </div>
   </div>
 
-  <div class="ui vertical stripe segment">
-    <div class="ui text container">
-      <h3 class="ui header">Don’t be a stranger!</h3>
-      <p>Leave us your unanswered burning questions, thoughtful suggestions, or even a simple hello. We’re always on the other line. </p>
-        <form class="ui form">
+  <div class="ui vertical stripe basic segment">
+    <div class="ui center aligned stackable grid container">
+      <div class="row">
+        <div class="eight wide column">
+          <img class="icon" src="circle.svg">
+          <h3 class="blue">Title</h3>
+          <p>Sign up to receive our latest updates</p>
+          <form class="ui form">
           <div class="field">
             <input type="text" name="email" placeholder="Enter your Email">
           </div>
           <button class="ui button" type="submit">Submit</button>
         </form>
+      </div>
     </div>
   </div>
+
+</div>
 
 
   <div class="ui inverted vertical footer segment">
