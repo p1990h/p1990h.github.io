@@ -127,6 +127,19 @@
       margin-top: 0.2em;
     }
 
+    .check {
+      color: #3949ab;
+    }
+
+    .card {
+      font-size: 0.85em !important;
+      padding: 1em !important;
+    }
+
+    .ac {
+      font-size: 0.85em !important;
+    }
+
 
 
 
@@ -172,6 +185,7 @@
   <script src="semantic/dist/components/visibility.js"></script>
   <script src="semantic/dist/components/sidebar.js"></script>
   <script src="semantic/dist/components/transition.js"></script>
+  <script src="semantic/dist/components/accordion.js"></script>
   <script>
   $(document)
     .ready(function() {
@@ -194,12 +208,12 @@
         .sidebar('attach events', '.toc.item')
       ;
 
+      $('.ui.accordion')
+        .accordion('refresh')
+      ;
+
     })
   ;
-
-      $('.ui.accordion')
-      .accordion()
-    ;
   </script>
 </head>
 <body>
@@ -287,37 +301,48 @@
   </div>
   </div>
 
- <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
+
+
+  <div class="ui vertical stripe segment">
+    <div class="ui top aligned stackable grid container">
       <h1 class="blue">Team Intro</h1>
       <div class="row">
-        <div class="eight wide column">
+        <div class="eleven wide column">
           <p>
           At XBrain, we value the kind of open, direct communication that takes us to good places. 
           We’d like, therefore, to extend you the same courtesy by telling you straight about what we hope for in a new team member: 
-          <br><br> 
-
-          <div class="pl ui bulleted list">
-            <div class="item">We’d like it if you were open to new ideas. </div>
-            <div class="item"><b>We’d like it if you were a self-starter.</b> </div>
-            <div class="item">We’d like it if you had enthusiasm to spare.</div>
-            <div class="item"><b>We’d like it if you had good work ethic and discipline. </b> </div>
-            <div class="item">We’d like it if you considered conversation integral to building relationships between colleagues.</div>
-            <div class="item">We’d like it if you erred on the side of overzealousness.</div>
-            <div class="item">We’d like it if you respected the varied ideas of others as much as you’d like your own ideas to be respected.</div>
-            <div class="item"><b>We’d like it if you could sustain a symbiotic relationship with your work.</b> </div>
-            <div class="item">We’d like it if you could think about what we could contribute to your personal goals, as well as what you could contribute to our culture.</div><br>
-            <div class="item">We’d love it if you could join us</div>
-          </div><br>
-
-          <p>
-            <b>How To Apply:</b><br>
-            Send us your resume, portfolio, github link, or anything you consider an appropriate representation of your professional history, along with a cover letter to apply@xbrain.team
+          <br><br>
           </p>
-        </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+  
+          <div class="pl ui list">    
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you were open to new ideas.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you were a self-starter.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you had good work ethic and discipline.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you considered conversation integral to building relationships between colleagues.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you erred on the side of overzealousness.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you respected the varied ideas of others as much as you’d like your own ideas to be respected.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you could sustain a symbiotic relationship with your work.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d like it if you could think about what we could contribute to your personal goals, as well as what you could contribute to our culture.</div>
+            </div>
+            <div class="item"><i class="check circle icon"></i>
+              <div class="content">We’d love it if you could join us.</div>
+            </div>      
+          </div>
         </div>
       </div>
     </div>
@@ -328,38 +353,97 @@
     <div class="ui top aligned stackable grid container">
       <h1 class="blue">Position</h1><br>
       <div class="row">
-        <div class="eight wide column">
-          <h2>Software Engineer</h2>
+        <div class="eleven wide column">
           <p>
-            Daria is our answer to the ever-growing demand for accessible machine learning software across various industries. Every member plays a significant role in making this answer as functional and optimal as possible.<br><br>
-            As a software engineer at XBrain, you would be taking charge of constructing Daria’s interface, which enables our users to combine / modify data in real time, and takes care of dataset and trained models management. Daria’s API server, which allows the trained models to be used in RESTful API, is also in your hands.<br><br>
-            <b>We look for the following qualifications in our candidates:</b><br>
+            Daria is our answer to the ever-growing demand for accessible machine learning software across various industries. Every member of our team plays a significant role in making this answer as functional and optimal as possible. 
           </p>
-          <div class="pl ui bulleted list">
-            <div class="item">Industry experience (or experience of equivalence)  with Web Framework (Python Django, Ruby on Rails, Java and Scala Play, Java Spring)</div>
-            <div class="item">A bachelor’s degree in computer engineering / science, or experience of equivalence</div>
-          </div>
-          <p>
-            <br><b>We’d welcome the following qualifications:</b>
-          </p>
-          <div class="pl ui bulleted list">
-            <div class="item">Knowledge of and experience with software and systems related to Version Control, Issue Tracking, Continuous Integration such as Git, JIRA, and Jenkins. (*required for experienced hires)</div>
-            <div class="item">Experience with Cloud Architecture (e.g. Amazon AWS, MS Azure, Google GCP), (*required for experienced hires)</div>
-            <div class="item">Varied experience with JavaScript Library</div>
-            <div class="item">Knowledge of Continuous Build, Integration, Test, and Delivery System</div>
-          </div>
-        </div>
-        <div class="six wide right floated column">
-          <div class="ui fluid card">
-            <div class="content">
-              <p class="center aligned">Want to work for Daria?</p>
-              <button class="ui right floated fluid primary button">
-                Apply for this role
-              </button>
+
+          <div class="ui styled fluid accordion">
+            <div class="active title">
+              <h3><b><i class="dropdown icon"></i>Software Engineer/Server</b></h3>
+            </div>
+            <div class="ac active content">
+              <p>
+                Your role at XBrain would be to develop the server-side of Daria, including RESTful API developments. This role is comprised of two parts—constructing APIs that users can use to easily operate trained models, and internal developers can use for Daria’s application programming<br><br>
+                We look for the following qualifications in our candidates:<br>
+              </p>
+              <div class="pl ui bulleted list">
+                <div class="item">Industry experience (or experience of equivalence)  with Web Framework (Python Django, Ruby on Rails, Java &#38; Scala Play, Java Spring, etc.)</div>
+                <div class="item">A bachelor’s degree in computer engineering / science, or experience of equivalence</div>
+              </div>
+              <p>
+                <br>We’d welcome the following qualifications:
+              </p>
+              <div class="pl ui bulleted list">
+                <div class="item">Experience with systems and software related to Version Control, Issue Tracking, and Continuous Integration (e.g. Git, JIRA, Jenkins)</div>
+                <div class="item">Experience with Cloud Architecture (e.g. Amazon AWS, MS Azure, Google GCP)</div>
+                <div class="item">Varied experience with JavaScript Library</div>
+                <div class="item">Knowledge of Continuous Build, Integration, Test, and Delivery System</div>
+              </div>
+            </div>
+
+            <div class="title">
+              <h3><b><i class="dropdown icon"></i>Software Engineer/Data Processing Infra</b></h3>
+            </div>
+            <div class="ac content">
+              <p>
+                Your role at XBrain would be to build a distributed data processing system that maximizes efficiency in dataset preparation and modeling processes. These processes, in turn, would help users view various analytics on and combine/transform large volumes of data<br><br>
+                We look for these specific qualifications in our candidates:<br>
+              </p>
+              <div class="pl ui bulleted list">
+                <div class="item">Industry experience with data distributed processing systems (e.g. Distributed File Systems, Distributed Databases, Distributed Processing Models, Distributed Resource Allocator / Scheduling Systems)</div>
+                <div class="item">A bachelor’s degree in computer science/engineering, or equivalent experience</div>
+              </div>
+              <p>
+                <br>We welcome these specific qualifications:
+              </p>
+              <div class="pl ui bulleted list">
+                <div class="item">Experience with projects related to Apache Data Processing Systems (HDFS, HBase, Kafka, YARN, Hive, Spark)</div>
+                <div class="item">Open source experience with other data processing systems</div>
+                <div class="item">Competence with Java and Python</div>
+                <div class="item">Experience with systems and software related to Version Control, Issue Tracking, and Continuous Integration (e.g. Git, JIRA, Jenkins)</div>
+              </div>
+            </div>
+
+            <div class="title">
+              <h3><b><i class="dropdown icon"></i>Machine Learning Engineer</b></h3>
+            </div>
+            <div class="ac content">
+              <p>
+                As a machine learning engineer at XBrain, you would be one of the main caretakers of Daria’s automated machine learning technology, helping to develop and enhance its features.<br><br>
+                We look for these specific qualifications in our candidates:<br>
+              </p>
+              <div class="pl ui bulleted list">
+                <div class="item">a bachelor’s degree or higher in a quantitative discipline such as Computer Science / Engineering, Mathematics, Engineering, Statistics, Physics</div>
+                <div class="item">more than a year’s experience of using Software, Framework, and Programming Languages such as scikit-learn, Python, TensorFlow, or R</div>
+              </div>
+              <p>
+                <br>We welcome these qualifications in our candidates:
+              </p>
+              <div class="pl ui bulleted list">
+                <div class="item">academic or practical experience with Machine Learning and / or Artificial Intelligence</div>
+                <div class="item">experience with General Purpose Programing Languages such as Java, C/C++, Python, JavaScript</div>
+                <div class="item">experience with Version Control Systems such as Git</div>
+                <div class="item">a Master’s Degree or higher in Computer Science / Engineering, Machine Learning, or Artificial Intelligence</div>
+                <div class="item">Participation experience in a Kaggle Competition</div>
+                <div class="item">experience with Deep Learning Library</div>
+                <div class="item">understanding of large-scale data processing systems</div>
+              </div>
             </div>
           </div>
         </div>
+        <div class="four wide right floated column">
+          <div class="ui fluid card">
+            <div class="content">
+              <p><b>How To Apply</b></p><br>
+              <p>Send us your resume, portfolio, github link, or anything you consider an appropriate representation of your professional history, cover letter optional, to <a href="mailto:apply@xbrain.team">apply@xbrain.team</a></p>
+            </div>
+          </div>
+        </div>
+
+
       </div>
+
 
 
     </div>
@@ -369,11 +453,11 @@
     <div class="ui middle aligned stackable grid container">
       <h1 class="blue">Office Life</h1>
       <div class="row">
-        <div class="eight wide column">
-          <p>Although the yet-miniscule size of the team mandates that we each lead our own agendas, we try our best to take interest in the projects of others.<br><br> Attention to every detail of Estu’s construction is integral to a community as small as ours. Each member tries to stay cognizant of the role of the other in the team, so that we all have a comprehensive and specific understanding of everyday operations. </p>
-        </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+        <div class="eleven wide column">
+          <p>
+            <i>Engagement and Independence</i><br><br>
+            Although the yet-miniscule size of the team mandates that we each lead our <b>own agendas</b>, we try our best to take interest in each other’s projects. <b>Attention to every detail</b> of Daria’s construction is integral to a community as small as ours. Each member tries to stay cognizant of the role of the other in the team, so that we all have a <b>comprehensive but specific understanding</b> of everyday operations.
+          </p>
         </div>
       </div>
     </div>
@@ -384,7 +468,7 @@
     <div class="ui container">
       <div class="ui stackable inverted equal height stackable grid">
         <div class="three wide column">
-          <h4 class="ui inverted header">HEADQUARTER</h4>
+          <h4 class="ui inverted header">OFFICE</h4>
           <div class="ui inverted link list">
             <a href="https://www.google.co.kr/maps/place/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%ED%85%8C%ED%97%A4%EB%9E%80%EB%A1%9C+201/@37.5012699,127.0349743,17z/data=!3m1!4b1!4m5!3m4!1s0x357ca3fefe8b823b:0x1ca79270f6068ff3!8m2!3d37.5012699!4d127.037163" class="item">
             <p>201 Teheran-ro<br>
@@ -404,8 +488,26 @@
           <img class="xbf ui image tiny right floated" src="assets/images/xbrain_logo_white.svg">
         </div>
       </div>
-      <br><br><br>
-      <p>©2017 XBRAIN Inc. All rights reserved</p>
+      <div class="ui stackable inverted equal height stackable grid">
+        <div class="sixteen wide column">
+          <div class="ui divider"></div>
+          <div class="ui horizontal list inverted right floated">
+            <div class="item">
+              <div class="content">
+                <a href="https://www.facebook.com/xbrain.team/"><div><p><i class="facebook square icon"></i></p></div></a>
+              </div>
+            </div>
+            <div class="item">
+              <div class="content">
+                <a href="https://www.linkedin.com/company/10524327/"><div><p><i class="linkedin square icon"></i></p></div></a>
+              </div>
+            </div>
+          </div>
+          <div class="ui inverted link list">
+            <a href="mailto:info@xbrain.team" class="item"><p>©2017 XBRAIN Inc. All rights reserved</p></a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
