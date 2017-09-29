@@ -47,7 +47,7 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 1.5em;
+      margin-top: 1.7em;
       margin-bottom: 0em;
       font-size: 3.7em;
       font-weight: bold;
@@ -75,7 +75,8 @@
       clear: both;
     }
     .ui.vertical.stripe p {
-      font-size: 1.33em;
+      font-size: 1.4em;
+      font-weight: 500;
     }
     .ui.vertical.stripe .horizontal.divider {
       margin: 3em 0em;
@@ -107,17 +108,38 @@
     }
 
     .pf {
-      width: 220px;
+      width: 200px;
       height: auto;
-      margin-top: 5em;
+    }
+
+    .pfb {
+      margin-bottom: 5em !important;
     }
 
     .ds {
-      margin-top: 0.5em;
-      margin-bottom: 1.2em;
+      margin-top: 0.8em;
+      margin-bottom: 0.8em;
       text-align: center;
       color: #616161;
     }
+
+    .blue {
+      color: #3949ab;
+      font-size: 2.5em !important;
+      font-weight: 900 !important;
+      margin-top: 0.2em;
+    }
+
+    .tl {
+      font-weight: 700 !important;
+      color: #424242 !important;
+    }
+
+    .name {
+      color: #424242 !important;
+    }
+
+
 
 
 
@@ -193,7 +215,7 @@
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
     <a href="index.html" class="item">Home</a>
-    <a href="#" class="item">Product</a>
+    <a href="product_.html" class="item">Product</a>
     <a href="team_.html" class="item">Team</a>
     <a href="careers_.html" class="item">Careers</a>
     <a href="#" class="item">Blog</a>
@@ -211,7 +233,7 @@
 <!-- Sidebar Menu -->
 <div class="ui vertical inverted sidebar menu">
   <a href="index.html" class="item">Home</a>
-  <a class="item">Product</a>
+  <a href="product_.html" class="item">Product</a>
   <a href="team_.html" class="item">Team</a>
   <a href="careers_.html" class="item">Careers</a>
   <a href="#" class="item">Blog</a>
@@ -223,9 +245,8 @@
 <!-- Page Contents -->
 <style type="text/css">
   .landing-image {
-    
+      background-image: url('170927_daria_bg.svg') !important;
       background-size: cover !important;
-      background-color: #283593 !important;
   }
   .pf2 {
     background-color: #fafafa !important;
@@ -234,7 +255,7 @@
 
 <div class="pusher">
   
-  <div class="ui vertical masthead center aligned basic segment landing-image">
+  <div class="ui vertical masthead center aligned segment landing-image">
   
   <div class="ui container">  
     
@@ -251,7 +272,7 @@
           </a>
           
           <div class="right item">
-            <a href="#" class="vertically fitted item">Product</a>
+            <a href="product_.html" class="vertically fitted item">Product</a>
           
             <a href="team_.html" class="vertically fitted item">Team</a>
 
@@ -265,7 +286,7 @@
 
  
       <div class="ui text">
-        <h1 class="ui left aligned inverted header">
+        <h1 class="ui center aligned inverted header">
           Get to know us a little better
         </h1>
       </div>
@@ -273,74 +294,76 @@
   </div>
   </div>
 
- <div class="ui vertical stripe basic segment">
-    <div class="ui middle aligned stackable grid container">
-      <h1>CULTURE</h1>
+ <div class="ui vertical stripe segment">
+
+
+    <div class="ui stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h1 class="ui header">We prize authenticity.</h1>
-          <p>As a team, we thrive on enterprising curiosity.<br><br>  
-          This means that while the team self-disciplines itself and maintains a sterling work ethic, we allow our own questions to guide our actions.<br><br> 
-          We understand that data science is a subject in which many areas of society could collide, from mathematics to the fine arts. Our aim, therefore, is to be as cognitively  flexible as possible.<br><br>  
-          This is an ongoing challenge, and one we welcome every day.</p>
+          <h2 class="blue">Culture</h2><br>
         </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+        <div class="twelve wide column">
+          <p class="name"><b>As a team, we thrive on enterprising curiosity.</b><br><br>  
+          In plainer terms, this means that while the team disciplines itself and maintains a sterling work ethic, we allow our own questions to guide our actions.<br>
+          We understand that data science is a subject in which many areas of society could collide, from mathematics to the fine arts, and that our goal is to make machine learning technology available to those fields. Our aim, therefore, is to be as cognitively flexible as possible.<br> 
+          It’s an ongoing challenge, and one we welcome every day.</p>
         </div>
       </div>
     </div>
   </div>
 
-
- <div class="ui vertical stripe basic segment">
+ <div class="ui vertical stripe segment">
   <div class="ui top aligned stackable grid container">
-    <h1>MEMBERS</h1>
-
+    <div class="eight wide column">
+      <h2 class="blue">Members</h2><br>
+    </div>
     <div id="parent" class="row">
-      <div id="1" class="four wide column">
+      <div id="1" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/jy.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Jinyoung Choi
             <div class="sub header">CEO, co-Founder</div>
           </h3>
+        </div>
+        <div class="ds description">
+          entrepreneur, aspiring patron of the arts, dad joke extraordinaire 
         </div>
         <div class="ds">
           <a href="https://www.linkedin.com/in/jinyoung-choi-4b36602b/">
             <i class="grey linkedin square icon"></i>
           </a>
         </div>
-        <div class="ds description">
-          entrepreneur, aspiring patron of the arts, dad joke extraordinaire 
-        </div>
       </div>
 
-      <div id="2" class="four wide column">
+      <div id="2" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/ac.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Anthony Cha
             <div class="sub header">Product Manager, Co-Founder</div>
           </h3>
+        </div>
+        <div class="ds description"> 
+          sportsman, chocolate hater, photographer
         </div>
         <div class="ds">
           <a href="https://www.linkedin.com/in/anthonycha">
             <i class="grey linkedin square icon"></i>
           </a>
         </div>
-        <div class="ds description">
-          Product Manager, Co-Founder 
-              sportsman, chocolate hater, photographer
-        </div>
       </div>
 
-      <div id="3" class="four wide column">
+      <div id="3" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/jm.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Jongmin Kim
             <div class="sub header">Software Engineer</div>
           </h3>
+        </div>
+        <div class="ds description">
+          motorbike enthusiast, wager aficionado, lover of computers and data distribution processing 
         </div>
         <div class="ds">
           <a href="https://www.linkedin.com/in/jongmin-kim-b46b1289/">
@@ -350,135 +373,129 @@
             <i class="grey facebook square icon"></i>
           </a>
         </div>
-        <div class="ds description">
-          motorbike enthusiast, wager aficionado, lover of computers and data distribution processing 
-        </div>
       </div>
 
-      <div id="4" class="four wide column">
+      <div id="4" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/yh.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Yonghyun Kwon
             <div class="sub header">Software Engineer</div>
           </h3>
+        </div>
+        <div class="ds description">
+          soccer player, VR/AR enthusiast
         </div>
         <div class="ds">
           <a href="https://www.facebook.com/profile.php?id=100001560258809">
             <i class="grey facebook square icon"></i>
           </a>
         </div>
-        <div class="ds description">
-          soccer player, VR/AR enthusiast
-        </div>
       </div>
 
-      <div id="5" class="four wide column">
+      <div id="5" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/kh.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Kukhwan Park
             <div class="sub header">Visual Designer</div>
           </h3>
         </div>
-        <div class="ds">
-          
-            <i class="grey facebook square icon"></i>
-            <i class="grey dribble icon"></i>
-          
-        </div>
         <div class="ds description">
           hyphenated designer-developer-to-be, pursuer of peace and quiet
         </div>
+        <div class="ds">
+            <i class="grey dribble icon"></i>
+        </div>
       </div>
 
-      <div id="6" class="four wide column">
+      <div id="6" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/sz.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Suzin You
             <div class="sub header">Machine Learning Engineer</div>
           </h3>
         </div>
+        <div class="ds description">
+          (pretentious food)-ie, cat lover, woman on a mission
+        </div>
         <div class="ds">
           
             <i class="icon"></i>
           
         </div>
-        <div class="ds description">
-          (pretentious food)-ie, cat lover, woman on a mission
-        </div>
       </div>
 
-      <div id="7" class="four wide column">
+      <div id="7" class="pfb four wide column">
         <div>
           <img class="ui pf centered circular image" src="assets/images/team/es.png">
-          <h3 class="ui centered header">
+          <h3 class="name ui centered header">
             Eunsoo Kim
             <div class="sub header">Public Relations</div>
           </h3>
         </div>
+        <div class="ds description">
+          pun reveler, drip-brewed coffee drinker, writer
+        </div>
         <div class="ds">
           
             <i class="icon"></i>
           
         </div>
-        <div class="ds description">
-          pun reveler, drip-brewed coffee drinker, writer
-        </div>
       </div>
 
-      <div id="8" class="four wide column">
+      <div id="8" class="pfb four wide column">
         <div>
-          <img class="ui pf centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png">
-          <h3 class="ui centered header">
+          <img class="ui pf centered circular image" src="profile_dummy.svg">
+          <h3 class="name ui centered header">
             Jongheon Jeong
             <div class="sub header">Researcher</div>
           </h3>
         </div>
-        <div class="ds">
-          
-            <i class="icon"></i>
-          
-        </div>
         <div class="ds description">
-          soccer player, VR/AR enthusiast
+          math enthusiast, fine diner
+        </div>
+        <div class="ds">
+          <a href="https://www.linkedin.com/in/jongheonj/">
+            <i class="grey linkedin square icon"></i>
+          </a>
         </div>
       </div>
 
-      <div id="9" class="four wide column">
+      <div id="9" class="pfb four wide column">
         <div>
-          <img class="ui pf centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png">
-          <h3 class="ui centered header">
+          <img class="ui pf centered circular image" src="profile_dummy.svg">
+          <h3 class="name ui centered header">
             Jungkap Park
             <div class="sub header">Machine Learning Engineer</div>
           </h3>
         </div>
-        <div class="ds">
-          
-            <i class="icon"></i>
-          
-        </div>
         <div class="ds description">
-          soccer player, VR/AR enthusiast
+          traveller, cook, jogger
+        </div>
+        <div class="ds">
+          <a href="https://www.linkedin.com/in/jungkap-park-75a7621a/">
+            <i class="grey linkedin square icon"></i>
+          </a>
         </div>
       </div>
 
-      <div id="10" class="four wide column">
+      <div id="10" class="pfb four wide column">
         <div>
-          <img class="ui pf centered circular image" src="https://semantic-ui.com/images/wireframe/square-image.png">
-          <h3 class="ui centered header">
+          <img class="name ui pf centered circular image" src="profile_dummy.svg">
+          <h3 class="name ui centered header">
             Jinwoo Shin
             <div class="sub header">Head of Research </div>
           </h3>
         </div>
-        <div class="ds">
-          
-            <i class="icon"></i>
-          
-        </div>
         <div class="ds description">
-          soccer player, VR/AR enthusiast
+          scientist, scholar
+        </div>
+        <div class="ds">
+          <a href="https://facebook.com/profile.php?id=100001738686296">
+            <i class="grey facebook square icon"></i>
+          </a>
         </div>
       </div>
 
@@ -489,14 +506,13 @@
 
 
   <div class="ui vertical stripe segment">
-    <div class="ui middle aligned stackable grid container">
-      <h1>VISION</h1>
+    <div class="ui stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <p>Estuaries are the passageways that connect rivers to open seas--but they are much more than mere conduits.<br><br> Wildlife in these regions learn to adapt to the constant flux and mix of fresh and saltwater, and comprises one of the most opulent ecosystems in the world. We wanted to channel this lush synergy into our first brainchild (no pun intended!).<br><br> By creating a machine learning system that would be accessible across all industries without a small fleet of data scientists, we believe that we could activate the same kind of volatile creativity.<br><br> Our goal is to make machine learning an everyday tool for the public, and we are steadfastly working towards it every day. </p>
+         <h2 class="blue">Vision</h1><br>
         </div>
-        <div class="six wide right floated column">
-          <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+        <div class="twelve wide column">
+          <p class="name">Estuaries are the passageways that connect rivers to open seas, but they are much more than mere conduits. Wildlife in these regions learn to adapt to the constant flux and mix of fresh and saltwater, and comprises one of the most opulent ecosystems in the world. We wanted to channel this lush synergy into our first brainchild (no pun intended!).<br> And so in comes Daria: a hybrid of data, the most important resource in our trade, and ria, a term for estuary.<br>By creating a machine learning system that can be accessible across all industries even without a small fleet of data scientists, we believe we could activate the same kind of volatile creativity with Daria. Our goal is to make machine learning an everyday tool for the public, and we have been working steadfastly towards this milestone with each passing day.</p>
         </div>
       </div>
     </div>
