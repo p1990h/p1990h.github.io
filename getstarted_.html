@@ -15,14 +15,6 @@
     crossorigin="anonymous"></script>
   <script src="semantic/dist/semantic.min.js"></script>
  
-  <!-- Profile Random Rearrange -->
-  <script type="text/javascript">
-    $(function() {
-     $("#parent").html($("#parent").children().sort(function() { return 0.5 - Math.random() }));
-    });
-  </script>
-
-
   <style type="text/css">
     .lm2 {
       display: none !important;
@@ -47,7 +39,7 @@
       margin-left: 0.5em;
     }
     .masthead h1.ui.header {
-      margin-top: 1.7em;
+      margin-top: 1.5em;
       margin-bottom: 0em;
       font-size: 3.7em;
       font-weight: bold;
@@ -107,19 +99,25 @@
     }
 
     .pf {
-      width: 200px;
+      width: 220px;
       height: auto;
-    }
-
-    .pfb {
-      margin-bottom: 5em !important;
+      margin-top: 5em;
     }
 
     .ds {
-      margin-top: 0.8em;
-      margin-bottom: 0.8em;
+      margin-top: 0.5em;
+      margin-bottom: 1.2em;
       text-align: center;
       color: #616161;
+    }
+
+    .pl {
+      color: #616161;
+      font-size: 1.2em !important;
+    }
+
+    .item {
+      line-height: 1.5em !important;
     }
 
     .blue {
@@ -129,15 +127,32 @@
       margin-top: 0.2em;
     }
 
+    .check {
+      color: #3949ab;
+    }
+
+    .card {
+      font-size: 0.85em !important;
+      padding: 1em !important;
+    }
+
+    .ac {
+      font-size: 0.85em !important;
+    }
+
+    .not-active {
+       pointer-events: none;
+       cursor: default;
+    }
+
     .tl {
       font-weight: 700 !important;
       color: #424242 !important;
     }
 
-    .name {
-      color: #424242 !important;
+    .table {
+      height: 230px;
     }
-
 
 
 
@@ -184,6 +199,7 @@
   <script src="semantic/dist/components/visibility.js"></script>
   <script src="semantic/dist/components/sidebar.js"></script>
   <script src="semantic/dist/components/transition.js"></script>
+  <script src="semantic/dist/components/accordion.js"></script>
   <script>
   $(document)
     .ready(function() {
@@ -206,11 +222,16 @@
         .sidebar('attach events', '.toc.item')
       ;
 
+      $('.ui.accordion')
+        .accordion('refresh')
+      ;
+
     })
   ;
   </script>
 </head>
-<body><!-- Following Menu -->
+<body>
+<!-- Following Menu -->
 <div class="ui large top fixed hidden menu">
   <div class="ui container">
     <a href="index.html" class="item">Home</a>
@@ -246,6 +267,7 @@
   .landing-image {
       background-image: url('170927_daria_bg.svg') !important;
       background-size: cover !important;
+      background-color: #283593 !important;
   }
   .pf2 {
     background-color: #fafafa !important;
@@ -254,7 +276,7 @@
 
 <div class="pusher">
   
-  <div class="ui vertical masthead center aligned segment landing-image">
+  <div class="ui vertical masthead center aligned basic segment landing-image">
   
   <div class="ui container">  
     
@@ -286,236 +308,174 @@
  
       <div class="ui text">
         <h1 class="ui center aligned inverted header">
-          Get to know us a little better
+          A groundbreakingly simple<br> machine learning experience
         </h1>
       </div>
 
   </div>
   </div>
 
- <div class="ui vertical stripe segment">
 
 
-    <div class="ui stackable grid container">
+  <div class="ui vertical stripe segment">
+    <div class="ui top aligned stackable grid container">
+      <h1 class="blue">Plans</h1>
+       <div class="row">
+        <div class="eight wide column">
+          <p>Daria comes in two distribution models:</p>
+        </div>
+      </div>
+
+  
       <div class="row">
         <div class="eight wide column">
-          <h2 class="blue">Culture</h2><br>
+          <table class="ui celled padded fixed table">
+            <thead>
+              <th><h3 class="tl center aligned">Public Cloud for</h3></th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="pl ui list">    
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">The affordability and service scalable for your business’ growth</div>
+                    </div>
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">Instantly keeping up with all of Daria’s feature updates</div>
+                    </div>
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">A simple subscription process</div>
+                    </div>
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">Enjoy a 1-month free trial on us</div>
+                    </div>     
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
-        <div class="eleven wide column">
-          <p>As a team, we thrive on enterprising curiosity.<br><br>  
-          In plainer terms, this means that while the team disciplines itself and maintains a sterling work ethic, we allow our own questions to guide our actions.<br>
-          We understand that data science is a subject in which many areas of society could collide, from mathematics to the fine arts, and that our goal is to make machine learning technology available to those fields. Our aim, therefore, is to be as cognitively flexible as possible.<br> 
-          It’s an ongoing challenge, and one we welcome every day.</p>
+
+         <div class="eight wide column">
+          <table class="ui celled padded fixed table">
+            <thead>
+              <th><h3 class="tl center aligned">On-Premise(Private Cloud) for</h3></th>
+            </tr></thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="pl ui list">    
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">The security that comes with knowing where and how your data is handled</div>
+                    </div>
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">Tailoring to an existing infrastructure</div>
+                    </div>
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">Increased agency over implementation</div>
+                    </div>
+                    <div class="item"><i class="check circle icon"></i>
+                      <div class="content">Personalized technical support</div>
+                    </div>     
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
         </div>
       </div>
     </div>
-  </div>
-
- <div class="ui vertical stripe segment">
-  <div class="ui top aligned stackable grid container">
-    <div class="eight wide column">
-      <h2 class="blue">Members</h2><br>
-    </div>
-    <div id="parent" class="row">
-      <div id="1" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/jy.png">
-          <h3 class="name ui centered header">
-            Jinyoung Choi
-            <div class="sub header">CEO, co-founder</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          entrepreneur, aspiring patron of the arts, dad joke extraordinaire 
-        </div>
-        <div class="ds">
-          <a href="https://www.linkedin.com/in/jinyoung-choi-4b36602b/">
-            <i class="grey linkedin square icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="2" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/ac.png">
-          <h3 class="name ui centered header">
-            Anthony Cha
-            <div class="sub header">Product Manager, co-founder</div>
-          </h3>
-        </div>
-        <div class="ds description"> 
-          sportsman, chocolate hater, photographer
-        </div>
-        <div class="ds">
-          <a href="https://www.linkedin.com/in/anthonycha">
-            <i class="grey linkedin square icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="3" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/jm.png">
-          <h3 class="name ui centered header">
-            Jongmin Kim
-            <div class="sub header">Software Engineer</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          motorbike enthusiast, wager aficionado, lover of computers and data distribution processing 
-        </div>
-        <div class="ds">
-          <a href="https://www.linkedin.com/in/jongmin-kim-b46b1289/">
-            <i class="grey linkedin square icon"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100004076165465&fref=ts">
-            <i class="grey facebook square icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="4" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/yh.png">
-          <h3 class="name ui centered header">
-            Yonghyun Kwon
-            <div class="sub header">Software Engineer</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          soccer player, VR/AR enthusiast
-        </div>
-        <div class="ds">
-          <a href="https://www.facebook.com/profile.php?id=100001560258809">
-            <i class="grey facebook square icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="5" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/kh.png">
-          <h3 class="name ui centered header">
-            Kukhwan Park
-            <div class="sub header">Visual Designer</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          hyphenated designer-developer-to-be, pursuer of peace and quiet
-        </div>
-        <div class="ds">
-            <i class="grey dribble icon"></i>
-        </div>
-      </div>
-
-      <div id="6" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/sz.png">
-          <h3 class="name ui centered header">
-            Suzin You
-            <div class="sub header">Machine Learning Engineer</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          (pretentious food)-ie, cat lover, woman on a mission
-        </div>
-        <div class="ds">
-          
-            <i class="icon"></i>
-          
-        </div>
-      </div>
-
-      <div id="7" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="assets/images/team/es.png">
-          <h3 class="name ui centered header">
-            Eunsoo Kim
-            <div class="sub header">Public Relations</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          pun reveler, drip-brewed coffee drinker, writer
-        </div>
-        <div class="ds">
-          
-            <i class="icon"></i>
-          
-        </div>
-      </div>
-
-      <div id="8" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="profile_dummy.svg">
-          <h3 class="name ui centered header">
-            Jongheon Jeong
-            <div class="sub header">Researcher</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          math enthusiast, fine diner
-        </div>
-        <div class="ds">
-          <a href="https://www.linkedin.com/in/jongheonj/">
-            <i class="grey linkedin square icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="9" class="pfb four wide column">
-        <div>
-          <img class="ui pf centered circular image" src="profile_dummy.svg">
-          <h3 class="name ui centered header">
-            Jungkap Park
-            <div class="sub header">Machine Learning Engineer</div>
-          </h3>
-        </div>
-        <div class="ds description">
-          traveller, cook, jogger
-        </div>
-        <div class="ds">
-          <a href="https://www.linkedin.com/in/jungkap-park-75a7621a/">
-            <i class="grey linkedin square icon"></i>
-          </a>
-        </div>
-      </div>
-
-      <div id="10" class="pfb four wide column">
-        <div>
-          <img class="name ui pf centered circular image" src="profile_dummy.svg">
-          <h3 class="name ui centered header">
-            Jinwoo Shin
-            <div class="sub header">Head of Research </div>
-          </h3>
-        </div>
-        <div class="ds description">
-          scientist, scholar
-        </div>
-        <div class="ds">
-          <a href="https://facebook.com/profile.php?id=100001738686296">
-            <i class="grey facebook square icon"></i>
-          </a>
-        </div>
-      </div>
-
-
-    </div>
-  </div>
   </div>
 
 
   <div class="ui vertical stripe segment">
-    <div class="ui stackable grid container">
+    <div class="ui top aligned stackable grid container">
+      <h1 class="blue">Contact Us</h1><br>
       <div class="row">
         <div class="eight wide column">
-         <h2 class="blue">Vision</h1><br>
+          <p>
+            Leave us your unanswered burning questions, thoughtful suggestions, or even a simple hello. We’re always on the other line. 
+          </p>
+
+          <!-- Begin MailChimp Signup Form -->
+          <div id="mc_embed_signup">
+          <form action="//team.us16.list-manage.com/subscribe/post?u=2777fbc29a7af0f9f2b66387c&amp;id=354952a970" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="ui form validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+          <div class="indicates-required"><label><span class="asterisk">*</span> Required</label></div>
+          <div class="mc-field-group field">
+            <label for="mce-FNAME">First Name  <span class="asterisk">*</span></label>
+            <input type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+          </div>
+          <div class="mc-field-group field">
+            <label for="mce-LNAME">Last Name  <span class="asterisk">*</span></label>
+            <input type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+          </div>
+          <div class="mc-field-group field">
+            <label for="mce-COMPANY">Company  <span class="asterisk">*</span></label>
+            <input type="text" value="" name="COMPANY" class="required" id="mce-COMPANY">
+          </div>
+          <div class="mc-field-group field">
+            <label for="mce-JOB">Job Title  <span class="asterisk">*</span>
+          </label>
+            <input type="text" value="" name="JOB" class="required" id="mce-JOB">
+          </div>
+          <div class="mc-field-group field">
+            <label for="mce-EMAIL">Business Email  <span class="asterisk">*</span>
+          </label>
+            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+          </div>
+          <div class="mc-field-group size1of2 field">
+            <label for="mce-PHONE">Phone Number  <span class="asterisk">*</span>
+          </label>
+            <input type="text" name="PHONE" class="required" value="" id="mce-PHONE">
+          </div>
+          <div class="mc-field-group field">
+            <label for="mce-INQUIRY">Type of inquiry  <span class="asterisk">*</span>
+          </label>
+            <select name="INQUIRY" class="required" id="mce-INQUIRY">
+            <option value=""></option>
+            <option value="Beta Tester Application">Beta Tester Application</option>
+          <option value="Business">Business</option>
+          <option value="Technical">Technical</option>
+          <option value="Others">Others</option>
+
+            </select>
+          </div>
+          <div class="mc-field-group  field">
+            <label for="mce-MESSAGE">Message </label>
+            <input type="text" value="" name="MESSAGE" class="" id="mce-MESSAGE" placeholder="what are your lingering Daria-related questions?">
+          </div>
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_2777fbc29a7af0f9f2b66387c_354952a970" tabindex="-1" value=""></div>
+              <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="ui primary button"></div>
+              </div>
+          </form>
+          </div>
+
+          <!--End mc_embed_signup-->
         </div>
-        <div class="eleven wide column">
-          <p>Estuaries are the passageways that connect rivers to open seas, but they are much more than mere conduits. Wildlife in these regions learn to adapt to the constant flux and mix of fresh and saltwater, and comprises one of the most opulent ecosystems in the world. We wanted to channel this lush synergy into our first brainchild (no pun intended!).<br> And so in comes Daria: a hybrid of data, the most important resource in our trade, and ria, a term for estuary.<br>By creating a machine learning system that can be accessible across all industries even without a small fleet of data scientists, we believe we could activate the same kind of volatile creativity with Daria. Our goal is to make machine learning an everyday tool for the public, and we have been working steadfastly towards this milestone with each passing day.</p>
+        <div class="six wide right floated column">
+          <div class="ui fluid card">
+            <div class="content">
+              <h3 class="tl">Sign-Up</h3>
+              <p>Start your machine learning experience here</p>
+            </div>
+          </div>
         </div>
+
+
       </div>
+
+
+
     </div>
   </div>
+
 
 
    <div class="ui inverted vertical footer segment">
