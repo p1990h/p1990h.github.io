@@ -58,6 +58,7 @@
       padding: 5em 0em;
     }
     .ui.vertical.stripe h3 {
+      font-size: 1.5em;
     }
     .ui.vertical.stripe .button + h3,
     .ui.vertical.stripe p + h3 {
@@ -126,6 +127,12 @@
 
 
     .blue {
+      color: #3949ab;
+      font-weight: 900 !important;
+      margin-top: 0.2em;
+    }
+
+    .blue2 {
       color: #3949ab;
       font-size: 2.5em !important;
       font-weight: 900 !important;
@@ -224,7 +231,7 @@
     <a href="product_.html" class="item">Product</a>
     <a href="team_.html" class="item">Team</a>
     <a href="careers_.html" class="item">Careers</a>
-    <a href="#" class="item">Blog</a>
+    <a href="https://medium.com/daria-blog" class="item">Blog</a>
     <div class="right menu">
       <div class="item">
         <a href="signin.html" class="ui button">Sign in</a>
@@ -242,7 +249,7 @@
   <a href="product_.html" class="item">Product</a>
   <a href="team_.html" class="item">Team</a>
   <a href="careers_.html" class="item">Careers</a>
-  <a href="#" class="item">Blog</a>
+  <a href="https://medium.com/daria-blog" class="item">Blog</a>
   <a href="signin.html" class="item">Sign in</a>
   <a href="getstarted_.html" class="item">Get Started</a>
 </div>
@@ -279,12 +286,12 @@
           </a>
           
           <div class="right item">
-            <a href="product_.html" class="vertically fitted item">Product</a>
+            <a href="product_.html" class="vertically fitted item active">Product</a>
           
             <a href="team_.html" class="vertically fitted item">Team</a>
 
             <a href="careers_.html" class="vertically fitted item">Careers</a>
-            <a href="#" class="vertically fitted item">Blog</a>
+            <a href="https://medium.com/daria-blog" class="vertically fitted item">Blog</a>
             <a href="signin.html" class="ui inverted button">Sign in</a>
             <a href="getstarted_.html" class="ui inverted button">Get Started</a>
           </div>
@@ -302,20 +309,15 @@
   </div>
 
 
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe segment" id="intuitive">
     <div class="ui top aligned stackable grid container">
-      <h1 class="blue">Key Features</h1><br>
+      <h1 class="blue2">Key Features</h1><br>
       <div class="row">
         <div class="eight wide column">
-          <h2 class="tl">Intuitive Graphical User Interface</h2>
-          <div class="pl ui list">
-            
-            <div class="item"><i class="check circle icon"></i>
-              <div class="content">
-              Users may combine and transform datasets from multiple sources such as RDBMS, Cloud Storage, and Local, without any coding with Daria’s GUI. Daria then automatically detects variable types and anomalies and suggests appropriate data transformations. Users can apply any predefined data processing function to this process, including oversampling, scaling, and normalization, with a mere drag and drop.
-              </div>
-            </div>    
-          </div>
+          <h3 class="blue">Intuitive Graphical User Interface</h3>
+          <p>
+            Users may combine and transform datasets from multiple sources such as RDBMS, Cloud Storage, and Local, without any coding with Daria’s GUI. Daria then automatically detects variable types and anomalies and suggests appropriate data transformations. Users can apply any predefined data processing function to this process, including oversampling, scaling, and normalization, with a mere drag and drop.
+          </p>
         </div>
         <div class="six wide right floated column">
         </div>
@@ -323,19 +325,12 @@
     </div>
   </div>
 
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe segment" id="automated">
     <div class="ui top aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h2 class="tl">Automated Algorithm Selection &#38; Tuning</h2>
-          <div class="pl ui list">
-            
-            <div class="item"><i class="check circle icon"></i>
-              <div class="content">
-              <b>Daria automatically selects the best machine learning model for each dataset from a number of possible combinations of algorithms and hyperparameters. Training results are organized onto a highly detailed analysis page in the form of intuitively designed charts and tables, allowing for a quick evaluation of model performance.</b>
-              </div>
-            </div>    
-          </div>
+          <h3 class="blue">Automated Algorithm Selection &#38; Tuning</h3>
+          <p><b>Daria automatically selects the best machine learning model for each dataset from a number of possible combinations of algorithms and hyperparameters. Training results are organized onto a highly detailed analysis page in the form of intuitively designed charts and tables, allowing for a quick evaluation of model performance.</b></p>
         </div>
         <div class="six wide right floated column">
         </div>
@@ -343,19 +338,12 @@
     </div>
   </div>
 
-  <div class="ui vertical stripe segment">
+  <div class="ui vertical stripe segment" id="integration">
     <div class="ui top aligned stackable grid container">
       <div class="row">
         <div class="eight wide column">
-          <h2 class="tl">Simple Integration</h2>
-          <div class="pl ui list">
-            
-            <div class="item"><i class="check circle icon"></i>
-              <div class="content">
-              <b>The results generated from model training can be deployed straight to production via Daria’s RESTful API. Users receive Real-time/Batch predictions, while also managing and monitoring model performance with Daria’s help.</b>
-              </div>
-            </div>    
-          </div>
+          <h3 class="blue">Simple Integration</h3>
+          <p><b>The results generated from model training can be deployed straight to production via Daria’s RESTful API. Users receive Real-time/Batch predictions, while also managing and monitoring model performance with Daria’s help.</b></p>
         </div>
         <div class="six wide right floated column">
         </div>
