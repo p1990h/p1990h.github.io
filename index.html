@@ -199,6 +199,12 @@
       .xbf {
         display: none !important;
       }
+      .order {
+        display: flex;
+        flex-direction: column;
+      }
+      .a {order: 2;}
+      .b {order: 1;}
     }
    
   </style>
@@ -325,49 +331,49 @@
   </div>
   </div>
 
-  <div class="lc ui vertical stripe  segment">
+  <div class="lc ui vertical stripe  segment order">
     <div class="il ui middle aligned stackable grid container">
       <div class="row">
-        <div class="eight wide column">
+        <div class="eight wide column a">
           <h3 class="blue">Accessible and Intuitive</h3>
           <p class="ui">Daria makes machine learning an accessible reality for users of any skill level. The highly visualized interface helps novices use Daria with minimal programming knowledge, while industry experts enjoy vastly reduced hours of iterative work through Daria’s automated machine learning process.</p> 
           <a href="product_.html#intuitive" class="ui teal button">
             <b>Learn More</b>
           </a>
         </div>
-        <div class="seven wide right floated column">
+        <div class="seven wide right floated column b">
           <img src="il_accessible.svg">
         </div>
       </div>
     </div>
   </div>
-  <div class="ui vertical stripe  segment">
+  <div class="ui vertical stripe  segment order">
     <div class="il ui middle aligned stackable grid container">
       <div class="row">
-        <div class="eight wide column">
+        <div class="eight wide column a">
           <h3 class="blue">Tailor-Made for the Right Fit</h3>
           <p>Daria applies numerous machine learning training conditions to your data and constructs an environment where you can compare and analyze disparate results at a glance.</p>
           <a href="product_.html#automated" class="ui teal button">
             Learn More
           </a>
         </div>
-        <div class="seven wide right floated column">
+        <div class="seven wide right floated column b">
           <img src="il_fit.svg">
         </div>
       </div>
     </div>
   </div>
-  <div class="ui vertical stripe  segment">
+  <div class="ui vertical stripe  segment order">
     <div class="ui middle aligned stackable grid container">
       <div class="row">
-        <div class="eight wide column">
+        <div class="eight wide column a">
           <h3 class="blue">Simple and Swift Deployment</h3>
           <p>We believe in the value of seeing hard work doing real good in the world. When your models are ready, deploy them with a single line of code to see them in action. No further complications.</p>
           <a href="product_.html#integration" class="ui teal button">
             Learn More
           </a>
         </div>
-        <div class="seven wide right floated column">
+        <div class="seven wide right floated column b">
           <img src="il_deployment.svg">
         </div>
       </div>
@@ -421,7 +427,6 @@
 
   <div class="ui vertical stripe basic segment">
     <div class="ui center aligned stackable grid container">
-      <div class="row">
         <div class="seven wide column">
           <h3 class="blue2">Don’t be a stranger!</h3>
           <p>Sign up to receive our latest updates</p><br>
@@ -446,10 +451,10 @@
           <!--End mc_embed_signup-->
 
       </div>
-    </div>
+
   </div>
 
-</div>
+</div>  
 
   <div class="ui inverted vertical footer segment">
     <div class="ui container">
